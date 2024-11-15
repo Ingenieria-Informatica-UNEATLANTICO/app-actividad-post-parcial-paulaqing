@@ -17,9 +17,9 @@
 ## Diagrama de Estados Conductor
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Estados](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/images/ImagesMdD-v2/diagramaEstadosConductor-v2.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/modelosUML/MdD-v2/diagramaConductor-v2.puml) |
+| ![Diagrama de Estados](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/images/ImagesMdD-v2/diagramaEstadosConductor-v2.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/modelosUML/MdD-v2/diagramaEstadosConductor-v2.puml) |
 
 ## Diagrama de Estados Incidencia
 | Diagrama | Código Fuente |
 |----------|---------------|
-| ![Diagrama de Estados](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/images/ImagesMdD-v2/diagramaEstadosIncidencia.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/modelosUML/MdD-v2/diagramaIncidencia.puml) |
+| ![Diagrama de Estados](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/images/ImagesMdD-v2/diagramaEstadosIncidencia.svg)| [Ver código](https://github.com/Ingenieria-Informatica-UNEATLANTICO/app-actividad-post-parcial-paulaqing/blob/main/modelosUML/MdD-v2/diagramaEstadosIncidencia.puml) |
