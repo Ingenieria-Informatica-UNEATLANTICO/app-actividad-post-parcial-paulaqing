@@ -1,0 +1,10 @@
+@startuml
+
+hide empty description
+
+[*] --> EnAutobús : pasajero coge autobús
+EnAutobús --> EnRuta : espera llegar a su destino
+EnRuta --> Pagando : llega a su destino y paga
+Pagando --> [*] : se baja del autobús
+
+@enduml

@@ -1,0 +1,31 @@
+@startuml
+hide empty description
+class Servicio {
+}
+
+class Vehiculo {
+}
+
+class Conductor {
+}
+
+class Ruta {
+}
+
+class Incidencia {
+}
+
+class Horario {
+}
+
+class Tarifa {
+}
+
+Vehiculo --> Ruta : sigue una
+Ruta --> Horario : se realiza en
+Servicio --> Tarifa : aplica una
+Incidencia --> Servicio : afecta a
+Servicio --> Vehiculo : utiliza un
+Vehiculo --> Conductor : necesita un
+
+@enduml

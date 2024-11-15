@@ -1,0 +1,54 @@
+@startuml
+hide empty description
+object Vehiculo {
+    matricula = "1234XYZ"
+    modelo = "Volvo 9800"
+    capacidad = 50
+    tipo = "Autobús"
+}
+
+object Conductor {
+    nombre = "Juan Rodríguez"
+    licencia = "BUS-12345"
+    antiguedad = "5 años"
+}
+
+object Ruta {
+    origen = "Santander"
+    destino = "Astillero"
+    distancia = "20 km"
+    paradas = ["Peñacastillo", "Maliaño"]
+}
+
+object Horario {
+    inicio = "08:00"
+    fin = "22:00"
+    diasServicio = "Lunes a Viernes"
+}
+
+object Servicio {
+    tipo = "Regular Diurno"
+    estado = "Activo"
+    frecuencia = "15 minutos"
+}
+
+object Tarifa {
+    precio = "1.20€"
+    tipo = "General"
+    descuentos = "50% abono transporte"
+}
+
+object Incidencia {
+    tipo = "Avería"
+    descripcion = "Fallo sistema frenos"
+    estado = "Resuelta"
+}
+
+Vehiculo --> Ruta : sigue una
+Ruta --> Horario : se realiza en
+Servicio --> Tarifa : aplica una
+Incidencia --> Servicio : afecta a
+Servicio --> Vehiculo : utiliza un
+Vehiculo --> Conductor : necesita un
+
+@enduml

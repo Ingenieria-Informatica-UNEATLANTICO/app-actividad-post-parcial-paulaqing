@@ -1,0 +1,11 @@
+@startuml
+
+hide empty description
+
+[*] --> SaliendoEstaciónAutobuses : empieza jornada conductor
+SaliendoEstaciónAutobuses --> EnAutobús : coge autobús
+EnAutobús --> EnRuta : realiza su ruta
+EnRuta --> VonviendoEstaciónAutobuses : termina jornada
+VonviendoEstaciónAutobuses --> [*] 
+
+@enduml
