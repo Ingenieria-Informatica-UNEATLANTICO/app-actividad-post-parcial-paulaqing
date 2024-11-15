@@ -1,0 +1,41 @@
+@startuml
+
+hide empty description
+object Vehiculo{
++ Autobús
+}
+object Conductor{
++ 2 conductores turno día
++ 1 conductor turno noche
+}
+object Ruta{
++ Santander-Astillero
+}
+object Incidencia{
++ Avería
++ Tráfico
+}
+object Horario{
++ 8:00 - 22:00
++ 23;30 - 5:30
+}
+object Servicio{
++ Diurno
++ Nocturno
+}
+object Tarifa{
++ Diurna: 1,20€
++ Nocturna: 1,60€
++ Abono transporte: pagas el 50%
+}
+
+Vehiculo --> Conductor : necesita
+Vehiculo --> Ruta : se le asigna
+Vehiculo --> Incidencia : puede tener
+Incidencia --> Horario : afecta al
+Ruta --> Horario : tiene
+Horario --> Servicio : dividido en
+Servicio --> Tarifa : tiene
+
+
+@enduml
