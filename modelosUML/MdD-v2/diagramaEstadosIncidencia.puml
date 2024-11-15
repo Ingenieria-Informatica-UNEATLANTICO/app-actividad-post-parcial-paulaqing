@@ -1,0 +1,20 @@
+@startuml
+
+hide empty description
+
+[*] --> DetectandoIncidencia : Problema identificado
+DetectandoIncidencia --> NotificandoCentral : Central es informada
+NotificandoCentral --> EvaluandoSolucion : Central determina solución
+
+EvaluandoSolucion --> Reparando : Reparación en el lugar
+EvaluandoSolucion --> ReemplazandoVehivulo : Envío de un nuevo vehículo
+EvaluandoSolucion --> CancelandoRuta : Ruta cancelada
+
+Reparando --> Resolviendo : Reparación realizada
+Resolviendo --> [*]
+ReemplazandoVehivulo --> ContinuandoRuta : Pasajeros transferidos
+ContinuandoRuta --> [*]
+
+CancelandoRuta --> [*]
+
+@enduml

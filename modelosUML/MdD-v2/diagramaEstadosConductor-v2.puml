@@ -1,0 +1,17 @@
+@startuml
+
+hide empty description
+
+[*] --> SaliendoEstacion : Comienza la ruta
+SaliendoEstacion --> EnRuta : Autobús en marcha
+EnRuta --> ParadaIntermedia : Llega a parada programada
+ParadaIntermedia --> EnRuta : Continúa la ruta
+
+EnRuta --> Incidencia : Avería o problema de tráfico
+Incidencia --> GestionandoIncidencia : Resolviendo el problema
+GestionandoIncidencia --> EnRuta : Incidencia solucionada
+
+EnRuta --> VolviendoEstacion : Acaba ruta diaria
+VolviendoEstacion --> [*]
+
+@enduml

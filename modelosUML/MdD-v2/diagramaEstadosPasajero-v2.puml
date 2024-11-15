@@ -1,0 +1,14 @@
+@startuml
+
+hide empty description
+
+[*] --> EnEstacion : Esperando autobús
+EnEstacion --> Subiendo : Autobús llega
+Subiendo --> Pagando : Compra ticket
+Pagando --> EnAutobús : Pago realizado
+Pagando --> EnEstacion : No tiene dinero
+EnAutobús --> EnRuta : Autobús inicia la ruta
+EnRuta --> Bajando : Llega a su destino
+Bajando --> [*] : Pasajero baja del autobús
+
+@enduml
